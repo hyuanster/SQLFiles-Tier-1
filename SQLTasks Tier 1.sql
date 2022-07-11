@@ -84,9 +84,8 @@ who signed up. Try not to use the LIMIT clause for your solution. */
 
 SELECT firstname, surname, joindate
 FROM `Members` 
+WHERE DATE(joindate) > '2012-09-01'
 ORDER BY joindate DESC
-LIMIT 10
-
 
 
 /* Q7: Produce a list of all members who have used a tennis court.
